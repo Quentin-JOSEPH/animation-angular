@@ -26,9 +26,8 @@
 
 <body>
 <div>
-  <router-outlet #routerOutlet="outlet"></router-outlet>
+  <router-outlet #routerOutlet="outlet" (activate)="onActivate($event)"></router-outlet>
 </div>
-<router-outlet name="popup"></router-outlet>
 </body>
 
 <app-footer></app-footer>

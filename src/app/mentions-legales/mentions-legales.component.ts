@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-mentions-legales',
@@ -7,9 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MentionsLegalesComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+  ) {}
 
   ngOnInit() {
+    // console.log(window.pageYOffset);
+    // window.scrollTo(0, 0);
+    // console.log(window.pageYOffset);
   }
 
 }

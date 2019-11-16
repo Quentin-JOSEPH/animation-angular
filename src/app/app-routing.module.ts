@@ -20,7 +20,11 @@ const appRoutes: Routes = [
   imports: [
     RouterModule.forRoot(
       appRoutes,
-      { enableTracing: false } // <-- true debugging purposes only
+      {
+        useHash: false,
+        anchorScrolling: 'enabled',
+        enableTracing: false
+      } // enableTracing <-- true debugging purposes only
     )
   ],
   exports: [
