@@ -1,0 +1,21 @@
+.div-solution {
+  color:white;
+}
+
+.div-encart {
+  background-color: #1f2251;
+  color:#afaeae;
+  border-radius: 8px;
+  margin:0.5em 1em;
+  padding: 10px 15px;
+}
+
+.div-encart h3 {
+  color:white;
+  border-bottom: 2px solid #afaeae;
+  text-align: center;
+  font-size: 25px;
+}
+
+.div-encart div {
+}

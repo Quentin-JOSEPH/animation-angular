@@ -1,0 +1,37 @@
+/* FOOTER */
+footer {
+  text-align: center;
+  background-color: #1f2251;
+  color: white;
+  bottom: 0;
+  /*position: absolute;*/
+  width: 100%;
+  z-index: 999;
+  padding-top:50px;
+}
+
+footer.a.mentionsLegales {
+  text-decoration: none;
+  color: white;
+}
+
+footer div img.logo {
+  width: 100%;
+}
+
+footer div ul.footer-list {
+  padding:0;
+}
+
+footer div ul.footer-list li{
+  display: inline;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+footer div ul.footer-list li > a{
+  font-size: 25px;
+  color: #9797a2;
+  padding: 4px 6px;
+  /*background: #252523;*/
+}
+

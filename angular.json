@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "front-site-perso": {
+    "qj-web": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/front-site-perso",
+            "outputPath": "dist/qj-web",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -63,18 +63,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "front-site-perso:build"
+            "browserTarget": "qj-web:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "front-site-perso:build:production"
+              "browserTarget": "qj-web:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "front-site-perso:build"
+            "browserTarget": "qj-web:build"
           }
         },
         "test": {
@@ -111,15 +111,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "front-site-perso:serve"
+            "devServerTarget": "qj-web:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "front-site-perso:serve:production"
+              "devServerTarget": "qj-web:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "front-site-perso"
+  "defaultProject": "qj-web"
 }

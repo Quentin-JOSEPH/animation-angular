@@ -1,0 +1,96 @@
+<section>
+  <div class="div-contact">
+    <h1 class="title">Contactez Nous !</h1>
+
+
+        <!--Form with header-->
+
+        <form (ngSubmit)="processContact()" id="contact-bar">
+          <div class="border-primary rounded-0">
+            <div class="card-body p-3">
+
+              <!--Body-->
+              <div class="form-group">
+                <div class="input-group mb-2">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text"><i class="fa fa-user text-info"></i></div>
+                  </div>
+                  <input type="text" class="form-control"
+                         id="name" name="name" placeholder="Nom"
+                         [(ngModel)]="contact.name"
+                         required
+                         #nameInput="ngModel">
+                </div>
+                <div class="alert alert-danger" role="alert" *ngIf="nameInput.invalid && nameInput.touched">
+                  Un nom est requis.
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="input-group mb-2">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text"><i class="fas fa-building text-info"></i></div>
+                  </div>
+                  <input type="text" class="form-control" id="society" name="society" placeholder="Entreprise"
+                         [(ngModel)]="contact.society"
+                         required
+                         #societyInput="ngModel">
+                </div>
+                <div class="alert alert-danger" role="alert" *ngIf="societyInput.invalid && societyInput.touched">
+                  Le nom de la société est requis.
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="input-group mb-2">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text"><i class="fas fa-phone-alt text-info"></i></div>
+                  </div>
+                  <input type="tel" class="form-control" id="tel" name="tel" placeholder="Numéro de téléphone"
+                         [(ngModel)]="contact.tel"
+                         required
+                         #telInput="ngModel">
+                </div>
+                <div class="alert alert-danger" role="alert" *ngIf="telInput.invalid && telInput.touched">
+                  Un numéro de téléphone est requis.
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="input-group mb-2">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text"><i class="fa fa-envelope text-info"></i></div>
+                  </div>
+                  <input type="email" class="form-control" id="email" name="email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" placeholder="Adresse Email de contact"
+                         [(ngModel)]="contact.email"
+                         required
+                         #emailInput="ngModel">
+                </div>
+                <div class="alert alert-danger" role="alert" *ngIf="emailInput.invalid && emailInput.touched">
+                  Le format de l'email doit être valide.
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="input-group mb-2">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text"><i class="fa fa-comment text-info"></i></div>
+                  </div>
+                  <textarea class="form-control" placeholder="Message" id="message" name="message" placeholder="Votre message"
+                            [(ngModel)]="contact.message"
+                            required
+                            #messageInput="ngModel"></textarea>
+                </div>
+                <div class="alert alert-danger" role="alert" *ngIf="messageInput.invalid && messageInput.touched">
+                  Le message ne peut être vide.
+                </div>
+              </div>
+
+              <div class="text-center">
+                <input type="submit" value="Envoyer" class="btn btn-block rounded-0 py-2 btn-submit"
+                       [disabled]="nameInput.invalid || societyInput.invalid || telInput.invalid || emailInput.invalid || messageInput.invalid">
+              </div>
+            </div>
+
+          </div>
+        </form>
+
+      </div>
+</section>
