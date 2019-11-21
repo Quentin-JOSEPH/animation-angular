@@ -11,6 +11,7 @@ import { ContactComponent } from './contact/contact.component';
 import { MentionsLegalesComponent } from './mentions-legales/mentions-legales.component';
 import { FooterComponent } from './footer/footer.component';
 import { SolutionComponent } from './solution/solution.component';
+import { LogoComponent } from './logo/logo.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { SolutionComponent } from './solution/solution.component';
     HomeComponent,
     MentionsLegalesComponent,
     FooterComponent,
-    SolutionComponent
+    SolutionComponent,
+    LogoComponent
   ],
   imports: [
     BrowserModule,

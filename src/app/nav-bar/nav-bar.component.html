@@ -1,7 +1,17 @@
-<nav id="nav-bar">
-  <ul>
-    <li *ngFor="let link of nav">
-      <a [routerLink]="['/']" fragment="{{link.lien}}">{{link.nom}}</a>
-    </li>
-  </ul>
-</nav>
+<header [ngClass]="{'menu_hover': menuHover}">
+  <div class="header row" id="menu_header">
+    <div class="col-lg-3 col-md-5">
+      <app-logo></app-logo>
+      <div class="d-flex  btn-nav-menu d-md-none" [ngClass]="{'btn-nav-menu-active': btnBurgerActive}" (click)="clickBurgerMenu()"><span></span></div>
+    </div>
+    <div class="col-lg-9 col-md-7 d-none d-md-block d-lg-block d-xl-block">
+      <nav id="nav-bar">
+        <ul>
+          <li *ngFor="let link of nav">
+            <a [routerLink]="['/']" fragment="{{link.lien}}">{{link.nom}}</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
