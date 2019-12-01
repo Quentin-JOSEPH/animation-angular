@@ -319,7 +319,7 @@ body {
   position: relative;
   z-index: 2;
   background-color: #5e5aa9;
-  background-image: url("../../assets/img/background.png");
+  /*background-image: url("../../assets/img/background.png");*/
   color:#ffffff;
 }
 
@@ -348,6 +348,6 @@ body {
   z-index: 2;
   /*background-color: khaki;*/
   background-color: #f9b849;
-  background-image: url("../../assets/img/background.png");
+  /*background-image: url("../../assets/img/background.png");*/
   color:#ffffff;
 }
